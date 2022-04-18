@@ -3,6 +3,10 @@ include "/usr/local/named/etc/acl/cnc.acl";
 include "/usr/local/named/etc/acl/any.acl";
 
 view "ctc" {
+    plugin query "/usr/local/named/lib/bind/filter-aaaa.so" {
+        filter-aaaa-on-v4 yes;
+    #   filter-aaaa-on-v6 yes;
+    };
    match-clients { ctc; key "dns"; };
    include "/usr/local/named/etc/zones/ctc.zone";
    forwarders {
@@ -11,6 +15,10 @@ view "ctc" {
    };
 };
 view "cnc" {
+    plugin query "/usr/local/named/lib/bind/filter-aaaa.so" {
+        filter-aaaa-on-v4 yes;
+    #   filter-aaaa-on-v6 yes;
+    };
    match-clients { cnc; key "dns"; };
    include "/usr/local/named/etc/zones/cnc.zone";
    forwarders {
@@ -19,6 +27,10 @@ view "cnc" {
    };
 };
 view "any" {
+    plugin query "/usr/local/named/lib/bind/filter-aaaa.so" {
+        filter-aaaa-on-v4 yes;
+    #   filter-aaaa-on-v6 yes;
+    };
    match-clients { any; key "dns"; };
    include "/usr/local/named/etc/zones/any.zone";
    forwarders {

@@ -1,23 +1,18 @@
 options
 {
-    listen-on port 53 
-    {
-        172.31.41.89;
-    };
+    listen-on port 53 {172.31.41.89;};
     #listen-on-v6 port 53 {::1;};
     directory "/usr/local/bind/var/run";
     pid-file "named.pid";
     recursion yes;
     querylog yes;
+    allow-recursion { any;};
     forwarders
     {
         8.8.8.8;
         1.1.1.1;
     };
-    allow-query
-    {
-        any;
-     };
+    allow-query { any;};
     notify yes;
 };
 
