@@ -1,0 +1,9 @@
+zone "." IN {
+    type hint;
+    file "/usr/local/named/etc/zones/root.zone";
+};
+zone "lmtwl.com" IN {
+    type master;
+    file "/usr/local/named/etc/zones/ctc/lmtwl.com";
+    allow-transfer { key TRANSFER; };
+};
