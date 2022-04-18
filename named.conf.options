@@ -1,0 +1,62 @@
+options
+{
+    listen-on port 53 
+    {
+        172.31.41.89;
+    };
+    #listen-on-v6 port 53 {::1;};
+    directory "/usr/local/bind/var/run";
+    pid-file "named.pid";
+    recursion yes;
+    querylog yes;
+    forwarders
+    {
+        8.8.8.8;
+        1.1.1.1;
+    };
+    allow-query
+    {
+        any;
+     };
+    notify yes;
+};
+
+logging
+{
+    channel default_log
+    {
+        file "/usr/local/named/var/logs/default.log" versions 10 size 100m;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+    channel general_log
+    {
+        file "/usr/local/named/var/logs/general.log" versions 10 size 100m;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+    channel query_log
+    {
+        file "/usr/local/named/var/logs/query.log" versions 10 size 100m;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+    category default
+    {
+        default_log;
+    };
+    category general
+    {
+        general_log;
+    };
+    category queries
+    {
+        query_log;
+    };
+};

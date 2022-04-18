@@ -1,0 +1,32 @@
+
+; <<>> DiG 9.16.1-Ubuntu <<>>
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47932
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			13459	IN	NS	a.root-servers.net.
+.			13459	IN	NS	b.root-servers.net.
+.			13459	IN	NS	c.root-servers.net.
+.			13459	IN	NS	d.root-servers.net.
+.			13459	IN	NS	e.root-servers.net.
+.			13459	IN	NS	f.root-servers.net.
+.			13459	IN	NS	g.root-servers.net.
+.			13459	IN	NS	h.root-servers.net.
+.			13459	IN	NS	i.root-servers.net.
+.			13459	IN	NS	j.root-servers.net.
+.			13459	IN	NS	k.root-servers.net.
+.			13459	IN	NS	l.root-servers.net.
+.			13459	IN	NS	m.root-servers.net.
+
+;; Query time: 0 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Apr 18 15:24:17 CST 2022
+;; MSG SIZE  rcvd: 239
+

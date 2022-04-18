@@ -1,6 +1,6 @@
 zone "." IN {
     type hint;
-    file "/usr/local/named/etc/zones/root.zone";
+    file "/usr/local/named/etc/zones/root.db";
 };
 zone "lmtwl.com" IN {
     type master;

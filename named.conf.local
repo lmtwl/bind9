@@ -1,0 +1,28 @@
+include "/usr/local/named/etc/acl/ctc.acl";
+include "/usr/local/named/etc/acl/cnc.acl";
+include "/usr/local/named/etc/acl/any.acl";
+
+view "ctc" {
+   match-clients { ctc; key "dns"; };
+   include "/usr/local/named/etc/zones/ctc.zone";
+   forwarders {
+       8.8.8.8;
+       1.1.1.1;
+   };
+};
+view "cnc" {
+   match-clients { cnc; key "dns"; };
+   include "/usr/local/named/etc/zones/cnc.zone";
+   forwarders {
+       8.8.8.8;
+       1.1.1.1;
+   };
+};
+view "any" {
+   match-clients { any; key "dns"; };
+   include "/usr/local/named/etc/zones/any.zone";
+   forwarders {
+       8.8.8.8;
+       1.1.1.1;
+   };
+};
