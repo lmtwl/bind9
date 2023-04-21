@@ -1,0 +1,152 @@
+19-Apr-2023 16:34:29.190 starting BIND 9.18.1 (Stable Release) <id:1a4e4c2>
+19-Apr-2023 16:34:29.190 running on Linux x86_64 5.4.0-139-generic #156-Ubuntu SMP Fri Jan 20 17:27:18 UTC 2023
+19-Apr-2023 16:34:29.190 built with  '--prefix=/usr/local/named/' '--enable-threads' '--disable-chroot' '--enable-largefile' '--enable-epoll' '--disable-doh' '--disable-linux-caps' '--disable-dependency-tracking'
+19-Apr-2023 16:34:29.190 running as: named -d 4
+19-Apr-2023 16:34:29.190 compiled by GCC 9.3.0
+19-Apr-2023 16:34:29.190 compiled with OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+19-Apr-2023 16:34:29.190 linked to OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+19-Apr-2023 16:34:29.190 ----------------------------------------------------
+19-Apr-2023 16:34:29.190 BIND 9 is maintained by Internet Systems Consortium,
+19-Apr-2023 16:34:29.190 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
+19-Apr-2023 16:34:29.190 corporation.  Support and training for BIND 9 are 
+19-Apr-2023 16:34:29.190 available at https://www.isc.org/support
+19-Apr-2023 16:34:29.190 ----------------------------------------------------
+19-Apr-2023 16:34:29.190 found 4 CPUs, using 4 worker threads
+19-Apr-2023 16:34:29.190 using 4 UDP listeners per interface
+19-Apr-2023 16:34:29.190 Registering DLZ_dlopen driver
+19-Apr-2023 16:34:29.190 Registering SDLZ driver 'dlopen'
+19-Apr-2023 16:34:29.190 Registering DLZ driver 'dlopen'
+19-Apr-2023 16:34:29.194 config.c: option 'trust-anchor-telemetry' is experimental and subject to change in the future
+19-Apr-2023 16:34:29.194 loading configuration from '/usr/local/named/etc/named.conf'
+19-Apr-2023 16:34:29.194 reading built-in trust anchors from file '/usr/local/named/etc/bind.keys'
+19-Apr-2023 16:34:29.194 exclusive task mode: starting
+19-Apr-2023 16:34:29.194 exclusive task mode: started
+19-Apr-2023 16:34:29.194 set maximum stack size to 18446744073709551615: success
+19-Apr-2023 16:34:29.194 set maximum data size to 18446744073709551615: success
+19-Apr-2023 16:34:29.194 set maximum core size to 18446744073709551615: success
+19-Apr-2023 16:34:29.194 set maximum open files to 18446744073709551615: success
+19-Apr-2023 16:34:29.194 using default UDP/IPv4 port range: [2000, 65000]
+19-Apr-2023 16:34:29.194 using default UDP/IPv6 port range: [2000, 65000]
+19-Apr-2023 16:34:29.194 listening on IPv4 interface eth0, 172.27.144.226#53
+19-Apr-2023 16:34:29.194 IPv6 socket API is incomplete; explicitly binding to each IPv6 address separately
+19-Apr-2023 16:34:29.194 listening on IPv6 interface lo, ::1#53
+19-Apr-2023 16:34:29.198 listening on IPv6 interface eth0, fe80::5054:ff:fe06:36e8%2#53
+19-Apr-2023 16:34:29.198 generating session key for dynamic DNS
+19-Apr-2023 16:34:29.198 sizing zone task pool based on 2 zones
+19-Apr-2023 16:34:29.198 zone_settimer: zone lmtwl.com/IN/any: enter
+19-Apr-2023 16:34:29.198 none:91: 'max-cache-size 90%' - setting to 3076MB (out of 3418MB)
+19-Apr-2023 16:34:29.198 dns_requestmgr_create
+19-Apr-2023 16:34:29.198 dns_requestmgr_create: 0x7fd308103340
+19-Apr-2023 16:34:29.198 dns_requestmgr_whenshutdown
+19-Apr-2023 16:34:29.198 obtaining root key for view any from '/usr/local/named/etc/bind.keys'
+19-Apr-2023 16:34:29.198 set up managed keys zone for view any, file 'any.mkeys'
+19-Apr-2023 16:34:29.198 loading plugin '/usr/local/named/lib/bind/filter-aaaa.so'
+19-Apr-2023 16:34:29.198 registering plugin '/usr/local/named/lib/bind/filter-aaaa.so'
+19-Apr-2023 16:34:29.198 registering 'filter-aaaa' module from /usr/local/named/etc/named.conf.local:9, with parameters
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 10.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 16.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 17.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 18.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 19.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 20.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 21.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 22.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 23.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 24.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 25.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 26.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 27.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 28.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 29.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 30.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 31.172.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 168.192.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 64.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 65.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 66.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 67.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 68.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 69.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 70.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 71.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 72.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 73.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 74.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 75.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 76.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 77.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 78.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 79.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 80.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 81.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 82.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 83.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 84.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 85.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 86.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 87.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 88.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 89.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 90.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 91.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 92.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 93.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 94.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 95.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 96.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 97.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 98.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 99.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 100.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 101.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 102.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 103.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 104.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.198 automatic empty zone: view any: 105.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 106.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 107.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 108.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 109.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 110.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 111.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 112.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 113.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 114.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 115.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 116.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 117.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 118.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 119.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 120.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 121.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 122.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 123.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 124.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 125.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 126.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 127.100.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 0.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 127.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 254.169.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 2.0.192.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 100.51.198.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 113.0.203.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 255.255.255.255.IN-ADDR.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: D.F.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 8.E.F.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 9.E.F.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: A.E.F.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: B.E.F.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: 8.B.D.0.1.0.0.2.IP6.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: EMPTY.AS112.ARPA
+19-Apr-2023 16:34:29.202 automatic empty zone: view any: HOME.ARPA
+19-Apr-2023 16:34:29.202 zone_settimer: zone version.bind/CH: enter
+19-Apr-2023 16:34:29.202 zone_settimer: zone hostname.bind/CH: enter
+19-Apr-2023 16:34:29.202 zone_settimer: zone authors.bind/CH: enter
+19-Apr-2023 16:34:29.202 zone_settimer: zone id.server/CH: enter
+19-Apr-2023 16:34:29.202 dns_requestmgr_create
+19-Apr-2023 16:34:29.202 dns_requestmgr_create: 0x7fd3081ff3b0
+19-Apr-2023 16:34:29.202 dns_requestmgr_whenshutdown
+19-Apr-2023 16:34:29.206 command channel listening on 127.0.0.1#953

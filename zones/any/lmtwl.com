@@ -8,22 +8,23 @@ $TTL 86400
 		86400 )    ; minimum TTL of 1 day
 ;
 ;
-@	NS	dns1.lmtwl.com.
-@	NS	dns2.lmtwl.com.
-dns1	A	1.1.1.1
-dns2	A	1.1.1.2
+	NS	dns1.lmtwl.com.
+	NS	dns2.lmtwl.com.
+dns1	A	2.2.2.1
+dns2	A	2.2.2.2
 ;
 ;
 @	MX	10	mail.lmtwl.com.
 	MX	20	mail2.lmtwl.com.
-mail	A	1.1.1.5
-mail2	A	1.1.1.6
+mail	A	2.2.2.5
+mail2	A	2.2.2.6
 ;
 ;
-services	A	1.1.1.10
-		A	1.1.1.11
+; This sample zone file illustrates sharing the same IP addresses for multiple services:
+;
+services    300	A  	3.2.2.12
+		A  	2.2.2.11
 
-ftp	CNAME	services.lmtwl.com.
-www	CNAME	services.lmtwl.com.
-;
-;
+ftp  CNAME services.lmtwl.com.
+www 300 CNAME services.lmtwl.com.
+c 300 A 1.1.1.1

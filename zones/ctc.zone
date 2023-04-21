@@ -2,7 +2,11 @@ zone "." IN {
     type hint;
     file "/usr/local/named/etc/zones/root.db";
 };
-zone "lmtwl.com" IN {
+zone "rpz" {
+  type master;
+  file "/usr/local/named/etc/zones/ctc/db.rpz";
+};
+zone "lmtwl.com" {
     type master;
     file "/usr/local/named/etc/zones/ctc/lmtwl.com";
     allow-transfer { key TRANSFER; };
