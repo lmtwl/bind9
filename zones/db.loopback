@@ -1,0 +1,9 @@
+$TTL 1D
+@       IN SOA  localhost. root.localhost. (
+                        1       ; Serial
+                        600     ; Refresh
+                        180     ; Retry
+                        1209600 ; Expire
+                        600 )   ; Minimum TTL
+        NS      localhost.
+        PTR     localhost.

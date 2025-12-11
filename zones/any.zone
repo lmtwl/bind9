@@ -1,13 +1,34 @@
 zone "." IN {
     type hint;
-    file "/usr/local/named/etc/zones/root.db";
+    file "/usr/local/named/etc/zones/db.root"; # 这个文件通常需要手动下载或通过 bind-tools 获取
 };
-zone "rpz" {
-  type master;
-  file "/usr/local/named/etc/zones/any/db.rpz";
-};
-zone "lmtwl.com" {
+
+zone "localhost" IN {
     type master;
-    file "/usr/local/named/etc/zones/any/lmtwl.com";
-    allow-transfer { key TRANSFER; };
+    file "/usr/local/named/etc/zones/db.localhost";
+    allow-update { none; };
+};
+zone "127.in-addr.arpa" IN {
+    type master;
+    file "/usr/local/named/etc/zones/db.loopback";
+    allow-update { none; };
+};
+
+zone "lmtwl.com" IN {
+    type master; # 定义为 master 区域
+    file "/usr/local/named/etc/zones/any/lmtwl.com"; # 对应的区域文件
+    allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
+    allow-query { any; }; # 允许任何客户端查询此区域
+};
+zone "ip3a.com" IN {
+    type master; # 定义为 master 区域
+    file "/usr/local/named/etc/zones/any/ip3a.com"; # 对应的区域文件
+    allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
+    allow-query { any; }; # 允许任何客户端查询此区域
+};
+zone "dnsv20.com" IN {
+    type master; # 定义为 master 区域
+    file "/usr/local/named/etc/zones/any/dnsv20.com"; # 对应的区域文件
+    allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
+    allow-query { any; }; # 允许任何客户端查询此区域
 };
