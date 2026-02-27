@@ -19,16 +19,19 @@ zone "lmtwl.com" IN {
     file "/usr/local/named/etc/zones/any/lmtwl.com"; # 对应的区域文件
     allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
     allow-query { any; }; # 允许任何客户端查询此区域
+    allow-update { key "rndc-key"; };
 };
 zone "ip3a.com" IN {
     type master; # 定义为 master 区域
     file "/usr/local/named/etc/zones/any/ip3a.com"; # 对应的区域文件
     allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
     allow-query { any; }; # 允许任何客户端查询此区域
+    allow-update { key "rndc-key"; };
 };
-zone "dnsv20.com" IN {
+zone "mna-acc.dnsv20.com" IN {
     type master; # 定义为 master 区域
-    file "/usr/local/named/etc/zones/any/dnsv20.com"; # 对应的区域文件
+    file "/usr/local/named/etc/zones/any/mna-acc.dnsv20.com"; # 对应的区域文件
     allow-transfer { 43.167.252.22; }; # 再次指定允许区域传输给备用服务器
     allow-query { any; }; # 允许任何客户端查询此区域
+    allow-update { key "rndc-key"; };
 };
